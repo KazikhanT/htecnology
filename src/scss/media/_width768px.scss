@@ -1,0 +1,107 @@
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    
+    .promo {
+        &__logo {
+            margin: 0 auto;
+        }
+        &__nav {
+            display: none;
+        }
+        &__wrapper {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .info-section {
+        .container {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-section__description {
+            margin-top: 33px;
+            text-align: center;
+        }
+
+        &_about-us {
+            .info-section__img {
+                margin-right: 0;
+            }
+        }
+        &_support {
+            .info-section__img {
+                order: -1;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .services {
+        &__box {
+            justify-content: center;
+        }
+    }
+
+    .card {
+        display: inline-block;
+    }
+
+    .blog-promo {
+        width: 269px;
+
+        &__link {
+            font-size: 13px;
+        }
+
+        &_big {
+            min-height: 371px;
+
+            .blog-promo__date {
+                width: 61px;
+                height: 51px;
+                font-size: 17px;
+            }
+            .blog-promo__img {
+                height: 256px;
+            }
+            .blog-promo__title {
+                font-size: 17px;
+            }
+        }
+        &_mini {
+            $mh: 111px;
+            min-height: $mh;
+
+            &:not(:first-child) {
+                margin-top: 17px;
+            }
+
+            .blog-promo__img {
+                width: 131px;
+                min-height: $mh;
+            }
+            .blog-promo__title {
+                font-size: 13px;
+            }
+            .blog-promo__date {
+                width: 39px;
+                height: 39px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .main-footer {
+        &__nav {
+            display: none;
+        }
+
+        &__info {
+            text-align: center;
+        }
+    }
+}

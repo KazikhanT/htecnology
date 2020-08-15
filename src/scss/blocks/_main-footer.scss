@@ -1,0 +1,49 @@
+.main-footer {
+    background-color: #eeecec;
+
+    &_section {
+        padding: 57px 0 55px 0;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__info {
+        max-width: 730px;
+
+        &-descr {
+            margin-top: 30px;
+            color: $second-color;
+            font-size: 16px;
+            font-family: $ffMedium;
+        }
+    }
+    &__logo {
+        width: 167px;
+        height: 72px;
+    }
+
+    &__nav {
+        &-title {
+            margin: 0;
+            margin-bottom: 37px;
+            color: $second-color;
+            font-size: 20px;
+            font-family: $ffBold;
+        }
+        &-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-top: 10px;
+        }
+        &-link {
+            color: $second-color;
+            font-size: 16px;
+            font-family: $ffMedium;
+            text-decoration: none;
+        }
+    }
+}

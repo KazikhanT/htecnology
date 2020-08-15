@@ -1,0 +1,30 @@
+.button {
+    width: 184px;
+    height: 56px;
+    border: none;
+    border-radius: 27px;
+    color: white;
+    font-size: 17px;
+    font-family: $ffMedium;
+    background-color: $second-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.7s;
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    &_green {
+        background-color: $first-color;
+    }
+
+    &_card {
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, #34C39C, #E7C66D);
+    }
+}

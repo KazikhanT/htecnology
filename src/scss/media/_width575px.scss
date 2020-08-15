@@ -1,0 +1,79 @@
+@media (max-width: 575px) {
+    .container {
+        max-width: 460px;
+    }
+
+    .promo {
+        &__main-title {
+            font-size: 41px;
+        }
+    }
+
+    .info-section {
+        &_about-us {
+            padding: 60px 0;
+
+            .info-section__img {
+                max-width: 450px;
+                max-height: 387px;
+            }
+        }
+        &_support {
+            padding: 30px 0 60px 0;
+
+            .info-section__img {
+                max-width: 424px;
+                max-height: 394px;
+            }
+        }
+    }
+
+    .blogs__buttom-section {
+        min-height: 177px;
+    }
+    
+    .blog-promo {
+        width: 221px;
+
+        &_big {
+            min-height: 321px;
+
+            .blog-promo__date {
+                width: 41px;
+                height: 41px;
+                font-size: 14px;
+            }
+            .blog-promo__img {
+                height: 167px;
+            }
+            .blog-promo__title {
+                font-size: 17px;
+            }
+        }
+        &_mini {
+            $mh: 96px;
+            min-height: $mh;
+
+            &:not(:first-child) {
+                margin-top: 13px;
+            }
+
+            .blog-promo__img {
+                width: 87px;
+                min-height: $mh;
+            }
+            .blog-promo__title {
+                font-size: 12px;
+                margin-bottom: 17px;
+            }
+            .blog-promo__date {
+                width: 29px;
+                height: 29px;
+                font-size: 11px;
+            }
+            .blog-promo__footer {
+                padding: 7px 5px;
+            }
+        }
+    }
+}

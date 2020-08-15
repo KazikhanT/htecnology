@@ -1,0 +1,1512 @@
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Regular";
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 184px;
+  height: 56px;
+  border: none;
+  border-radius: 27px;
+  color: white;
+  font-size: 17px;
+  font-family: "Roboto Medium";
+  background-color: #4B4B4D;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.7s;
+}
+
+.button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.button_green {
+  background-color: #16C2A3;
+}
+
+.button_card {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #34C39C, #E7C66D);
+}
+
+.promo {
+  min-height: 797px;
+  background: url("../images/promo_bg.png") center center/cover no-repeat;
+}
+
+.promo_section {
+  padding: 5px 0 193px 0;
+}
+
+.promo__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__logo {
+  width: 153px;
+  height: 65px;
+}
+
+.promo__nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.promo__nav-list li {
+  margin: 0 25px;
+}
+
+.promo__nav-list li:last-child {
+  margin-right: 0;
+}
+
+.promo__nav-link {
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto Medium";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.promo__wrapper {
+  margin-top: 215px;
+  width: 455px;
+}
+
+.promo__main-title {
+  color: white;
+  font-size: 50px;
+  font-family: "Roboto Bold";
+  margin-bottom: 0;
+}
+
+.promo__description-text {
+  margin: 40px 0 45px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.info-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-section__description-title {
+  color: #4B4B4D;
+  font-size: 36px;
+  font-family: "Roboto Bold";
+  margin: 0 0;
+}
+
+.info-section__description-text {
+  margin: 40px 0 49px 0;
+  color: #4B4B4D;
+  font-size: 18px;
+}
+
+.info-section_about-us {
+  padding: 113px 0;
+}
+
+.info-section_about-us .info-section__img {
+  max-width: 606px;
+  max-height: 516px;
+  margin-right: 96px;
+}
+
+.info-section_support {
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.info-section_support .info-section__img {
+  max-width: 630px;
+  max-height: 607px;
+  margin-left: 31px;
+}
+
+.section-title {
+  color: #4B4B4D;
+  font-family: "Roboto Bold";
+  font-size: 36px;
+}
+
+.section-title_top {
+  text-align: center;
+}
+
+.section-title_white {
+  color: white;
+}
+
+.section-description {
+  color: #4B4B4D;
+  font-size: 16px;
+}
+
+.section-description_top {
+  text-align: center;
+}
+
+.section-description_white {
+  color: white;
+}
+
+.services_section {
+  padding: 20px 0 80px 0;
+}
+
+.services__box {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 371px;
+  height: 362px;
+  background: linear-gradient(to right, #34C39C, #E7C66D);
+}
+
+.card_gradient {
+  margin-top: 40px;
+  padding: 3px 3px;
+}
+
+.card_input {
+  margin-top: 40px;
+  background: url("../icons/services/4.png") center center/cover no-repeat;
+}
+
+.card_input .card__wrapper {
+  background-color: transparent;
+}
+
+.card_input .card__title {
+  color: white;
+  font-size: 30px;
+}
+
+.card_input .card__description {
+  color: white;
+  margin-top: 17px;
+}
+
+.card_input .card__form {
+  margin-top: 31px;
+  position: relative;
+}
+
+.card_input .card__form input[type="email"] {
+  width: 323px;
+  height: 51px;
+  padding: 0 111px 0 20px;
+  border-radius: 27px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.card_input .card__form input[type="submit"] {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #4B4B4D;
+  font-size: 16px;
+  font-family: "Roboto Medium";
+  text-transform: uppercase;
+}
+
+.card__wrapper {
+  background-color: white;
+  position: relative;
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__title {
+  margin: 30px 0 0 0;
+  color: #4B4B4D;
+  font-size: 18px;
+  font-family: "Roboto Medium";
+  text-align: center;
+}
+
+.card__description {
+  margin-top: 30px;
+  color: #4B4B4D;
+  font-size: 16px;
+  text-align: center;
+}
+
+.achievements {
+  min-height: 611px;
+}
+
+.achievements_section {
+  padding: 101px 0 89px 0;
+}
+
+.achievements__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.achievements__article {
+  max-width: 469px;
+}
+
+.achievements__article-sup {
+  margin: 0;
+  color: #4B4B4D;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.achievements__article-title {
+  margin: 30px 0 40px 0;
+  color: #4B4B4D;
+  font-size: 40px;
+  font-family: "Roboto Bold";
+}
+
+.achievements__article-text {
+  color: #4B4B4D;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.achievements__article .button_green {
+  margin-right: 29px;
+}
+
+.achievements__box {
+  overflow: hidden;
+}
+
+.achievements__box-item {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.achievements__total {
+  max-width: 80px;
+  margin-right: 40px;
+}
+
+.achievements__total-num {
+  color: #16C2A3;
+  font-size: 48px;
+  font-family: "Roboto Bold";
+}
+
+.achievements__total-descr {
+  color: #4B4B4D;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.achievements__description {
+  border-left: 2px solid #16C2A3;
+  padding: 5px 0 5px 36px;
+  color: #4B4B4D;
+  font-size: 16px;
+}
+
+.blogs_section {
+  position: relative;
+}
+
+.blogs__top-section {
+  min-height: 608px;
+  padding-top: 101px;
+  background: url("../images/server_bg.png") center center/cover no-repeat;
+}
+
+.blogs__bottom-section {
+  min-height: 408px;
+}
+
+.blogs__wrapper {
+  position: absolute;
+  top: 311px;
+  display: flex;
+}
+
+.blogs__mini {
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.blog-promo {
+  width: 552px;
+}
+
+.blog-promo__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto Medium";
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #16C2A3;
+}
+
+.blog-promo__footer {
+  background-color: white;
+  padding: 30px 21px;
+}
+
+.blog-promo__title {
+  margin: 0;
+  margin-bottom: 37px;
+  color: #4B4B4D;
+  font-size: 24px;
+  font-family: "Roboto Medium";
+}
+
+.blog-promo__link {
+  color: #4B4B4D;
+  font-size: 18px;
+  font-family: "Roboto Bold";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blog-promo_big {
+  min-height: 604px;
+  border: 1px solid #16C2A3;
+}
+
+.blog-promo_big .blog-promo__img {
+  height: 423px;
+  background: url("../images/blogs/1.png") center center/cover no-repeat;
+}
+
+.blog-promo_big .blog-promo__date {
+  width: 72px;
+  height: 61px;
+  font-size: 22px;
+}
+
+.blog-promo_big .blog-promo__title {
+  color: #16C2A3;
+}
+
+.blog-promo_mini {
+  min-height: 182px;
+  display: flex;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.blog-promo_mini:not(:first-child) {
+  margin-top: 30px;
+}
+
+.blog-promo_mini .blog-promo__img {
+  width: 171px;
+  min-height: 182px;
+}
+
+.blog-promo_mini:nth-child(1) .blog-promo__img {
+  background: url("../images/blogs/2.png") center center/cover no-repeat;
+}
+
+.blog-promo_mini:nth-child(2) .blog-promo__img {
+  background: url("../images/blogs/3.png") center center/cover no-repeat;
+}
+
+.blog-promo_mini:nth-child(3) .blog-promo__img {
+  background: url("../images/blogs/4.png") center center/cover no-repeat;
+}
+
+.blog-promo_mini .blog-promo__date {
+  width: 46px;
+  height: 42px;
+}
+
+.main-footer {
+  background-color: #eeecec;
+}
+
+.main-footer_section {
+  padding: 57px 0 55px 0;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-footer__info {
+  max-width: 730px;
+}
+
+.main-footer__info-descr {
+  margin-top: 30px;
+  color: #4B4B4D;
+  font-size: 16px;
+  font-family: "Roboto Medium";
+}
+
+.main-footer__logo {
+  width: 167px;
+  height: 72px;
+}
+
+.main-footer__nav-title {
+  margin: 0;
+  margin-bottom: 37px;
+  color: #4B4B4D;
+  font-size: 20px;
+  font-family: "Roboto Bold";
+}
+
+.main-footer__nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-footer__nav li {
+  margin-top: 10px;
+}
+
+.main-footer__nav-link {
+  color: #4B4B4D;
+  font-size: 16px;
+  font-family: "Roboto Medium";
+  text-decoration: none;
+}
+
+.burger-menu__button {
+  display: block;
+  width: 33px;
+  height: 64px;
+  background-color: #16C2A3;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: fixed;
+  top: -20px;
+  left: 7px;
+  z-index: 1200;
+  transition: top 0.7s;
+}
+
+.burger-menu__button-linies, .burger-menu__button-linies::before, .burger-menu__button-linies::after {
+  position: absolute;
+  width: 17px;
+  height: 2px;
+  background-color: white;
+}
+
+.burger-menu__button-linies {
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.burger-menu__button-linies::before {
+  top: -7px;
+  content: "";
+}
+
+.burger-menu__button-linies::after {
+  top: 7px;
+  content: "";
+}
+
+.burger-menu__nav {
+  position: fixed;
+  width: 190px;
+  height: 100vh;
+  background-color: black;
+  z-index: 1100;
+  transition: transform 1s;
+  transform: translateX(-100%);
+}
+
+.burger-menu__nav ul {
+  list-style-type: none;
+  padding-left: 11px;
+  padding-top: 33px;
+}
+
+.burger-menu__nav ul li {
+  margin-top: 17px;
+}
+
+.burger-menu__link {
+  color: #16C2A3;
+  font-size: 18px;
+  font-family: "Roboto Bold";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.burger-menu__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  z-index: 1000;
+  transition: opacity 0.7s;
+  opacity: 0;
+  display: none;
+}
+
+.burger-menu_active .burger-menu__nav {
+  transform: translateX(0);
+}
+
+.burger-menu_active .burger-menu__overlay {
+  display: block;
+}
+
+.animation-up {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(135%);
+  opacity: 0;
+}
+
+.animation-up_active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animation-right {
+  transition: transform 1.5s, opacity 1.5s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.animation-right_active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animation-left {
+  transition: transform 1.5s, opacity 1.5s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.animation-left_active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (max-width: 1190px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo__nav-list li {
+    margin: 0 13px;
+  }
+  .info-section_about-us .info-section__img {
+    margin-right: 49px;
+  }
+  .card {
+    width: 303px;
+    height: 373px;
+  }
+  .card_input .card__form input[type="email"] {
+    width: 283px;
+  }
+  .achievements__article {
+    max-width: 413px;
+  }
+  .achievements__article-title {
+    font-size: 36px;
+  }
+  .achievements__article-text {
+    margin-bottom: 54px;
+  }
+  .achievements__box .achievements__box-item {
+    max-width: 461px;
+  }
+  .blog-promo {
+    width: 474px;
+  }
+  .blog-promo_big {
+    min-height: 549px;
+  }
+  .blog-promo_big .blog-promo__img {
+    height: 361px;
+  }
+  .blog-promo_mini {
+    min-height: 162px;
+  }
+  .blog-promo_mini .blog-promo__img {
+    min-height: 162px;
+  }
+  .blog-promo_mini .blog-promo__title {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+  .info-section_about-us .info-section__img {
+    max-width: 506px;
+    max-height: 416px;
+  }
+  .card {
+    width: 393px;
+    height: 373px;
+  }
+  .card_input .card__form input[type="email"] {
+    width: 333px;
+  }
+  .achievements__article {
+    max-width: 360px;
+  }
+  .achievements__article-title {
+    font-size: 32px;
+  }
+  .achievements button {
+    width: 155px;
+  }
+  .info-section_support .info-section__img {
+    max-width: 530px;
+    max-height: 507px;
+  }
+  .blog-promo {
+    width: 420px;
+  }
+  .blog-promo_big {
+    min-height: 546px;
+  }
+  .main-footer__info {
+    max-width: 501px;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    max-width: 750px;
+  }
+  .promo__nav-link {
+    font-size: 16px;
+  }
+  .info-section_about-us .info-section__img {
+    margin-right: 19px;
+  }
+  .card {
+    width: 361px;
+  }
+  .achievements__wrapper {
+    flex-direction: column;
+  }
+  .achievements__article {
+    max-width: 100%;
+  }
+  .achievements__article-title {
+    margin: 10px 0 20px 0;
+  }
+  .achievements__article-text {
+    margin-bottom: 30px;
+  }
+  .achievements__box {
+    margin-top: 55px;
+  }
+  .achievements__box .achievements__box-item {
+    max-width: 100%;
+  }
+  .achievements__description {
+    font-size: 19px;
+  }
+  .info-section_support .info-section__img {
+    max-width: 481px;
+    max-height: 451px;
+    margin-left: 11px;
+  }
+  .info-section_support .info-section__description-title {
+    font-size: 31px;
+  }
+  .blog-promo {
+    width: 365px;
+  }
+  .blog-promo__footer {
+    padding: 7px 15px;
+  }
+  .blog-promo__link {
+    font-size: 15px;
+  }
+  .blog-promo_big {
+    min-height: 406px;
+  }
+  .blog-promo_big .blog-promo__img {
+    width: 100%;
+    height: 345px;
+  }
+  .blog-promo_big .blog-promo__title {
+    margin-top: 13px;
+    font-size: 21px;
+    margin-bottom: 27px;
+  }
+  .blog-promo_mini {
+    min-height: 139px;
+  }
+  .blog-promo_mini .blog-promo__img {
+    min-height: 139px;
+  }
+  .blogs__top-section {
+    min-height: 515px;
+    padding-top: 31px;
+  }
+  .blogs__buttom-section {
+    min-height: 338px;
+  }
+  .blogs__wrapper {
+    top: 271px;
+  }
+  .blogs__mini {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .promo__logo {
+    margin: 0 auto;
+  }
+  .promo__nav {
+    display: none;
+  }
+  .promo__wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .info-section .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-section .info-section__description {
+    margin-top: 33px;
+    text-align: center;
+  }
+  .info-section_about-us .info-section__img {
+    margin-right: 0;
+  }
+  .info-section_support .info-section__img {
+    order: -1;
+    margin-left: 0;
+  }
+  .services__box {
+    justify-content: center;
+  }
+  .card {
+    display: inline-block;
+  }
+  .blog-promo {
+    width: 269px;
+  }
+  .blog-promo__link {
+    font-size: 13px;
+  }
+  .blog-promo_big {
+    min-height: 371px;
+  }
+  .blog-promo_big .blog-promo__date {
+    width: 61px;
+    height: 51px;
+    font-size: 17px;
+  }
+  .blog-promo_big .blog-promo__img {
+    height: 256px;
+  }
+  .blog-promo_big .blog-promo__title {
+    font-size: 17px;
+  }
+  .blog-promo_mini {
+    min-height: 111px;
+  }
+  .blog-promo_mini:not(:first-child) {
+    margin-top: 17px;
+  }
+  .blog-promo_mini .blog-promo__img {
+    width: 131px;
+    min-height: 111px;
+  }
+  .blog-promo_mini .blog-promo__title {
+    font-size: 13px;
+  }
+  .blog-promo_mini .blog-promo__date {
+    width: 39px;
+    height: 39px;
+    font-size: 13px;
+  }
+  .main-footer__nav {
+    display: none;
+  }
+  .main-footer__info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 460px;
+  }
+  .promo__main-title {
+    font-size: 41px;
+  }
+  .info-section_about-us {
+    padding: 60px 0;
+  }
+  .info-section_about-us .info-section__img {
+    max-width: 450px;
+    max-height: 387px;
+  }
+  .info-section_support {
+    padding: 30px 0 60px 0;
+  }
+  .info-section_support .info-section__img {
+    max-width: 424px;
+    max-height: 394px;
+  }
+  .blogs__buttom-section {
+    min-height: 177px;
+  }
+  .blog-promo {
+    width: 221px;
+  }
+  .blog-promo_big {
+    min-height: 321px;
+  }
+  .blog-promo_big .blog-promo__date {
+    width: 41px;
+    height: 41px;
+    font-size: 14px;
+  }
+  .blog-promo_big .blog-promo__img {
+    height: 167px;
+  }
+  .blog-promo_big .blog-promo__title {
+    font-size: 17px;
+  }
+  .blog-promo_mini {
+    min-height: 96px;
+  }
+  .blog-promo_mini:not(:first-child) {
+    margin-top: 13px;
+  }
+  .blog-promo_mini .blog-promo__img {
+    width: 87px;
+    min-height: 96px;
+  }
+  .blog-promo_mini .blog-promo__title {
+    font-size: 12px;
+    margin-bottom: 17px;
+  }
+  .blog-promo_mini .blog-promo__date {
+    width: 29px;
+    height: 29px;
+    font-size: 11px;
+  }
+  .blog-promo_mini .blog-promo__footer {
+    padding: 7px 5px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    max-width: 410px;
+  }
+  .info-section_about-us .info-section__img {
+    max-width: 410px;
+    max-height: 351px;
+  }
+  .info-section_support .info-section__img {
+    max-width: 410px;
+    max-height: 391px;
+  }
+  .achievements__total {
+    margin-right: 23px;
+  }
+  .achievements__total-num {
+    font-size: 41px;
+  }
+  .achievements__total-descr {
+    font-size: 13px;
+  }
+  .achievements__description {
+    padding-left: 13px;
+  }
+  .blogs__top-section {
+    min-height: 648px;
+  }
+  .blogs__buttom-section {
+    min-height: 468px;
+  }
+  .blogs__wrapper {
+    width: 410px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blogs__mini {
+    margin-left: 0;
+    margin-top: 23px;
+  }
+  .blog-promo {
+    width: 361px;
+  }
+  .blog-promo__link {
+    font-size: 17px;
+  }
+  .blog-promo_big {
+    min-height: 421px;
+  }
+  .blog-promo_big .blog-promo__img {
+    height: 291px;
+  }
+  .blog-promo_big .blog-promo__title {
+    font-size: 23px;
+  }
+  .blog-promo_big .blog-promo__date {
+    width: 61px;
+    height: 61px;
+    font-size: 22px;
+  }
+  .blog-promo_mini {
+    min-height: 111px;
+  }
+  .blog-promo_mini:not(:first-child) {
+    margin-top: 13px;
+  }
+  .blog-promo_mini .blog-promo__img {
+    width: 87px;
+    min-height: 111px;
+  }
+  .blog-promo_mini .blog-promo__title {
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
+  .blog-promo_mini .blog-promo__date {
+    width: 41px;
+    height: 41px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 310px;
+  }
+  .promo__main-title {
+    font-size: 31px;
+  }
+  .info-section_about-us .info-section__img {
+    max-width: 300px;
+    max-height: 267px;
+  }
+  .info-section_support .info-section__img {
+    max-width: 300px;
+    max-height: 291px;
+  }
+  .info-section_support .button {
+    font-size: 15px;
+  }
+  .card {
+    width: 300px;
+  }
+  .card_input .card__form input[type="email"] {
+    width: 290px;
+  }
+  .achievements__article-title {
+    font-size: 27px;
+    margin-top: 0;
+  }
+  .achievements__article-text {
+    font-size: 20px;
+  }
+  .achievements__article .button {
+    width: 141px;
+    font-size: 15px;
+  }
+  .achievements__article .button_green {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+  .achievements__box-item {
+    flex-direction: column;
+  }
+  .achievements__box-item:not(:first-child) {
+    margin-top: 30px;
+  }
+  .achievements__total {
+    max-width: 310px;
+    text-align: center;
+  }
+  .achievements__total-num {
+    font-size: 48px;
+  }
+  .achievements__total-descr {
+    font-size: 19px;
+  }
+  .blogs__top-section {
+    background: transparent;
+  }
+  .blogs__top-section .section-title {
+    color: #4B4B4D;
+  }
+  .blogs__top-section .section-description {
+    color: #4B4B4D;
+  }
+  .blogs__buttom-section {
+    min-height: 155px;
+  }
+  .blogs__wrapper {
+    width: 310px;
+  }
+  .blog-promo {
+    width: 281px;
+  }
+  .blog-promo__link {
+    font-size: 13px;
+  }
+  .blog-promo_big {
+    display: none;
+  }
+  .blog-promo_mini .blog-promo__title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .promo__wrapper {
+    margin-top: 151px;
+  }
+  .info-section_about-us .info-section__img {
+    max-width: 280px;
+    max-height: 247px;
+  }
+  .info-section_support .info-section__img {
+    max-width: 280px;
+    max-height: 271px;
+  }
+  .card {
+    width: 280px;
+  }
+  .card_input .card__form input[type="email"] {
+    width: 270px;
+  }
+  .achievements__article-title {
+    font-size: 24px;
+  }
+  .achievements__article .button {
+    margin: 0;
+    width: 136px;
+  }
+  .blogs__wrapper {
+    width: 280px;
+  }
+}
+
+.author-info {
+  background-color: #B4EBE1;
+  height: 52px;
+  margin: 0;
+  font-size: 17px;
+  color: #4B4B4D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

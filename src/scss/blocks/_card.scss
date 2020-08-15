@@ -1,0 +1,77 @@
+.card {
+    width: 371px;
+    height: 362px;
+    background: linear-gradient(to right, #34C39C, #E7C66D);
+
+    &_gradient {
+        margin-top: 40px;
+        padding: 3px 3px;
+    }
+    &_input {
+        margin-top: 40px;
+        background: url("../icons/services/4.png") center (center / cover) no-repeat;
+
+        .card__wrapper {
+            background-color: transparent;
+        }
+        .card__title {
+            color: white;
+            font-size: 30px;
+        }
+        .card__description {
+            color: white;
+            margin-top: 17px;
+        }
+
+        .card__form {
+            margin-top: 31px;
+            position: relative;
+
+            input[type="email"] {
+                width: 323px;
+                height: 51px;
+                padding: 0 111px 0 20px;
+                border-radius: 27px;
+                border: none;
+                font-size: 16px;
+                outline: none;
+            }
+            input[type="submit"] {
+                position: absolute;
+                right: 10px;
+                top: 17px;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                color: $second-color;
+                font-size: 16px;
+                font-family: $ffMedium;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__wrapper {
+        background-color: white;
+        position: relative;
+        padding: 0 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        margin: 30px 0 0 0;
+        color: $second-color;
+        font-size: 18px;
+        font-family: $ffMedium;
+        text-align: center;
+    }
+    &__description {
+        margin-top: 30px;
+        color: $second-color;
+        font-size: 16px;
+        text-align: center;
+    }
+}

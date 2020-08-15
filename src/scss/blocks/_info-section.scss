@@ -1,0 +1,43 @@
+.info-section {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__description {
+                
+        &-title {
+            color: $second-color;
+            font-size: 36px;
+            font-family: $ffBold;
+            margin: 0 0;
+        }
+        &-text {
+            margin: 40px 0 49px 0;
+            color: $second-color;
+            font-size: 18px;
+        }
+    }
+
+    &_about-us {
+        padding: 113px 0;
+
+        .info-section__img {
+            max-width: 606px;
+            max-height: 516px;
+            margin-right: 96px;
+        }
+    }
+
+    &_support {
+        overflow: hidden;
+        padding: 60px 0;
+
+        .info-section__img {
+            max-width: 630px;
+            max-height: 607px;
+            margin-left: 31px;
+        }
+    }
+}

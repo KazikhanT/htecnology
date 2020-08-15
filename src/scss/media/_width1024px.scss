@@ -1,0 +1,50 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+    
+    .info-section_about-us .info-section__img {
+        max-width: 506px;
+        max-height: 416px;
+    }
+    
+    .card {
+        width: 393px;
+        height: 373px;
+    
+        &_input .card__form input[type="email"] {
+            width: 333px;
+        }
+    }
+    
+    .achievements {
+        &__article {
+            max-width: 360px;
+            
+            &-title {
+                font-size: 32px;
+            }
+        }
+
+        button {
+            width: 155px;
+        }
+    }
+
+    .info-section_support .info-section__img {
+        max-width: 530px;
+        max-height: 507px;
+    }
+
+    .blog-promo {
+        width: 420px;
+
+        &_big {
+            min-height: 546px;
+        }
+    }
+
+    .main-footer__info {
+        max-width: 501px;
+    }
+}

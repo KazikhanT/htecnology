@@ -1,0 +1,26 @@
+.section-title {
+    color: $second-color;
+    font-family: $ffBold;
+    font-size: 36px;
+
+    &_top {
+        text-align: center;
+    }
+
+    &_white {
+        color: white;
+    }
+}
+
+.section-description {
+    color: $second-color;
+    font-size: 16px;
+    
+    &_top {
+        text-align: center;
+    }
+
+    &_white {
+        color: white;
+    }
+}

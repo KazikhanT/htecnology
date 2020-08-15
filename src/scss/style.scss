@@ -1,0 +1,41 @@
+@import "libs/fonts";
+@import "libs/normalize";
+
+* {
+    box-sizing: border-box;
+    font-family: $ffRegular;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+$first-color: #16C2A3;
+$second-color: #4B4B4D;
+
+@import "blocks/button";
+@import "blocks/promo";
+@import "blocks/info-section";
+@import "blocks/titles";
+@import "blocks/services";
+@import "blocks/card";
+@import "blocks/achievements";
+@import "blocks/blogs";
+@import "blocks/blog-promo";
+@import "blocks/main-footer";
+@import "blocks/burger-menu";
+@import "blocks/animation";
+
+@import "media/media";
+
+.author-info {
+    background-color: #B4EBE1;
+    height: 52px;
+    margin: 0;
+    font-size: 17px;
+    color: $second-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

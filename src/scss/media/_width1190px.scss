@@ -1,0 +1,62 @@
+@media (max-width: 1190px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .promo__nav-list li {
+        margin: 0 13px;
+    }
+
+    .info-section_about-us .info-section__img {
+        margin-right: 49px;
+    }
+
+    .card {
+        width: 303px;
+        height: 373px;
+
+        &_input .card__form input[type="email"] {
+            width: 283px;
+        }
+    }
+
+    .achievements {
+        &__article {
+            max-width: 413px;
+            
+            &-title {
+                font-size: 36px;
+            }
+            &-text {
+                margin-bottom: 54px;
+            }
+        }
+        &__box &__box-item {
+            max-width: 461px;
+        }
+    }
+
+    .blog-promo {
+        width: 474px;
+
+        &_big {
+            min-height: 549px;
+
+            .blog-promo__img {
+                height: 361px;
+            }
+        }
+
+        &_mini {
+            $mh: 162px;
+            min-height: $mh;
+
+            .blog-promo__img {
+                min-height: $mh;
+            }
+            .blog-promo__title {
+                font-size: 19px;
+            }
+        }
+    }
+}

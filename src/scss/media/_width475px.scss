@@ -1,0 +1,102 @@
+@media (max-width: 475px) {
+    .container {
+        max-width: 410px;
+    }
+
+    .info-section {
+        &_about-us {
+            .info-section__img {
+                max-width: 410px;
+                max-height: 351px;            
+            }
+        }
+        &_support {
+            .info-section__img {
+                max-width: 410px;
+                max-height: 391px;
+            }
+        }
+    }
+
+    .achievements {
+        &__total {
+            margin-right: 23px;
+
+            &-num {
+                font-size: 41px;
+            }
+            &-descr {
+                font-size: 13px;
+            }
+        }
+        &__description {
+            padding-left: 13px;
+        }
+    }
+
+    .blogs {
+        &__top-section {
+            min-height: 648px;
+        }
+        &__buttom-section {
+            min-height: 468px;
+        }
+        &__wrapper {
+            width: 410px;
+            margin: 0 auto;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__mini {
+            margin-left: 0;
+            margin-top: 23px;
+        }
+    }
+
+    .blog-promo {
+        width: 361px;
+
+        &__link {
+            font-size: 17px;
+        }
+
+        &_big {
+            min-height: 421px;
+
+            .blog-promo__img {
+                height: 291px;
+            }
+            .blog-promo__title {
+                font-size: 23px;
+            }
+            .blog-promo__date {
+                width: 61px;
+                height: 61px;
+                font-size: 22px;
+            }
+        }
+        &_mini {
+            $mh: 111px;
+            min-height: $mh;
+
+            &:not(:first-child) {
+                margin-top: 13px;
+            }
+            .blog-promo__img {
+                width: 87px;
+                min-height: $mh;
+            }
+            .blog-promo__title {
+                font-size: 18px;
+                margin-bottom: 33px;
+            }
+            .blog-promo__date {
+                width: 41px;
+                height: 41px;
+                font-size: 17px;
+            }
+        }
+    }
+}

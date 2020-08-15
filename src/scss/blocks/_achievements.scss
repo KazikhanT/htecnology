@@ -1,0 +1,68 @@
+.achievements {
+    min-height: 611px;
+    
+    &_section {
+        padding: 101px 0 89px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__article {
+        max-width: 469px;
+
+        &-sup {
+            margin: 0;
+            color: $second-color;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        &-title {
+            margin: 30px 0 40px 0;
+            color: $second-color;
+            font-size: 40px;
+            font-family: $ffBold;
+        }
+        &-text {
+            color: $second-color;
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        .button_green {
+            margin-right: 29px;
+        }
+    }
+
+    &__box {
+        overflow: hidden;
+        
+        &-item {
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__total {
+        max-width: 80px;
+        margin-right: 40px;
+
+        &-num {
+            color: $first-color;
+            font-size: 48px;
+            font-family: $ffBold;
+        }
+        &-descr {
+            color: $second-color;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+    &__description {
+        border-left: 2px solid $first-color;
+        padding: 5px 0 5px 36px;
+        color: $second-color;
+        font-size: 16px;
+    }
+}

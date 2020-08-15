@@ -1,0 +1,109 @@
+@media (max-width: 425px) {
+    .container {
+        max-width: 310px;
+    }
+
+    .promo__main-title {
+        font-size: 31px;
+    }
+
+    .info-section {
+        &_about-us {
+            .info-section__img {
+                max-width: 300px;
+                max-height: 267px;            
+            }
+        }
+        &_support {
+            .info-section__img {
+                max-width: 300px;
+                max-height: 291px;
+            }
+            .button {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .card {
+        width: 300px;
+
+        &_input &__form input[type="email"] {
+            width: 290px;
+        }
+    }
+
+    .achievements {
+        &__article {
+            &-title {
+                font-size: 27px;
+                margin-top: 0;
+            }
+            &-text {
+                font-size: 20px;
+            }
+            .button {
+                width: 141px;
+                font-size: 15px;
+
+                &_green {
+                    margin-left: 9px;
+                    margin-right: 9px;
+                }
+            }
+        }
+        &__box-item {
+            flex-direction: column;
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+        &__total {
+            max-width: 310px;
+            text-align: center;
+
+            &-num {
+                font-size: 48px;
+            }
+            &-descr {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .blogs {
+        &__top-section {
+            background: transparent;
+
+            .section-title {
+                color: $second-color;
+            }
+            .section-description {
+                color: $second-color;
+            }
+        }
+        &__buttom-section {
+            min-height: 155px;
+        }
+        &__wrapper {
+            width: 310px;
+        }
+    }
+    .blog-promo {
+        width: 281px;
+
+        &__link {
+            font-size: 13px;
+        }
+
+        &_big {
+            display: none;
+        }
+        &_mini {
+            .blog-promo__title {
+                font-size: 13px;
+            }
+        }
+    }
+}

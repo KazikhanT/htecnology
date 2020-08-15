@@ -1,0 +1,22 @@
+.blogs {
+    &_section {
+        position: relative;
+    }
+    &__top-section {
+        min-height: 608px;
+        padding-top: 101px;
+        background: url("../images/server_bg.png") center (center / cover) no-repeat;
+    }
+    &__bottom-section {
+        min-height: 408px;
+    }
+    &__wrapper {
+        position: absolute;
+        top: 311px;
+        display: flex;        
+    }
+    &__mini {
+        margin-left: 30px;
+        overflow: hidden;
+    }
+}
