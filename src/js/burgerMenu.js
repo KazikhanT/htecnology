@@ -1,20 +1,20 @@
 class Button {
     constructor(className) {
-        this.selector = document.querySelector('.' + className);
+        this.el = document.querySelector('.' + className);
     }
 
     show() {
         const DEFAULT_POSITION = "-20px";
-        this.selector.style.top = DEFAULT_POSITION;
+        this.el.style.top = DEFAULT_POSITION;
     }
 
     hide() {
         const SHIFT_DOWN = "-5px";
-        this.selector.style.top = SHIFT_DOWN;
+        this.el.style.top = SHIFT_DOWN;
 
         setTimeout(() => {
             const BUTTON_HEIGHT = "64px";
-            this.selector.style.top = `-${BUTTON_HEIGHT}`;
+            this.el.style.top = `-${BUTTON_HEIGHT}`;
         }, 400);
     }
 }
@@ -22,17 +22,17 @@ class Button {
 
 class Overlay {
     constructor(className) {
-        this.selector = document.querySelector('.' + className);
+        this.el = document.querySelector('.' + className);
     }
 
     show() {
         setTimeout(() => {
-            this.selector.style.opacity = "1";
+            this.el.style.opacity = "1";
         }, 400);
     }
 
     hide() {
-        this.selector.style.opacity = "0";
+        this.el.style.opacity = "0";
     }
 }
 
@@ -40,15 +40,15 @@ class Overlay {
 class Menu {
     constructor(className) {
         this._className = className;
-        this.selector = document.querySelector('.' + className);
+        this.el = document.querySelector('.' + className);
     }
 
     addActiveClass() {
-        this.selector.classList.add(this._className + "_active");
+        this.el.classList.add(this._className + "_active");
     }
 
     removeActiveClass() {
-        this.selector.classList.remove(this._className + "_active");
+        this.el.classList.remove(this._className + "_active");
     }
 }
 
@@ -115,12 +115,12 @@ export default function() {
     createHTML();
     let bgMenu = new BurgerMenu();
 
-    bgMenu.button.selector.addEventListener("click", event => {
+    bgMenu.button.el.addEventListener("click", event => {
         event.preventDefault();
         bgMenu.show();
     });
 
-    bgMenu.overlay.selector.addEventListener("click", () => {
+    bgMenu.overlay.el.addEventListener("click", () => {
         bgMenu.hide();
     });
 
